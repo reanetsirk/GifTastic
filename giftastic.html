@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gif Tastic Billionaires</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<header>
+    <img src="assets/images/money-header.JPEG" alt="headerImage" width="100%">
+</header>
+<body>
+    <div class="container">
+        <h1 class="text-center">Billionaires</h1>
+        <br>
+        <div id="billionaires-button">
+            <button type="button" onclick="searchGif('Jay-Z')" class="btn btn-primary" value="Jay-Z">Jay-Z</button>
+            <button type="button" onclick="searchGif(Oprah)" class="btn btn-primary" value="Oprah">Oprah</button>
+            <button type="button" onclick="searchGif(billGates)" class="btn btn-primary" value="billGates">Bill
+                Gates</button>
+            <button type="button" onclick="searchGif(warrenBuffett)" class="btn btn-primary"
+                value="warrenBuffett">Warren Buffett</button>
+            <button type="button" onclick="searchGif(markZuckerberg)" class="btn btn-primary"
+                value="markZuckerberg">Mark Zuckerberg</button>
+        </div>
+        <br>
+        <div class="container" id="btn">
+            <form id="billionairs-form">
+                <label id="add" for="billionaires-input">Please enter your favorite billionaire</label>
+                <input type="text" class="form-control" id="billionaires-input">
+                <br>
+            </form>
+            <button conclick="submitButtonClicked ()" type="button" id="add-billionaires"
+                class="btn btn-success">Submit</button>
+            <br>
+            <div id="billionaires">
+                <div class="col-md-6">
+                    <div class="ratings">Rating: G</div>
+                    <img src=""
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="assets/javascript/main.js"></script>
+</body>
+
+</html>
