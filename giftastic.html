@@ -16,40 +16,67 @@
     <img src="assets/images/money-header.JPEG" alt="headerImage" width="100%">
 </header>
 <body>
-    <div class="container">
-        <h1 class="text-center">Billionaires</h1>
-        <br>
-        <div id="billionaires-button">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=oprah&api_key=dc6zaTOxFJmzC";
+       
+       $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+    });
+
+    
+    <div class="container;">
+            <h1 class="text-center">Billionaires</h1>
+            <br>
+            <div id="billionaires-button">
             <button type="button" onclick="searchGif('Jay-Z')" class="btn btn-primary" value="Jay-Z">Jay-Z</button>
             <button type="button" onclick="searchGif(Oprah)" class="btn btn-primary" value="Oprah">Oprah</button>
-            <button type="button" onclick="searchGif(billGates)" class="btn btn-primary" value="billGates">Bill
-                Gates</button>
-            <button type="button" onclick="searchGif(warrenBuffett)" class="btn btn-primary"
-                value="warrenBuffett">Warren Buffett</button>
-            <button type="button" onclick="searchGif(markZuckerberg)" class="btn btn-primary"
-                value="markZuckerberg">Mark Zuckerberg</button>
+           <button type="button" onclick="searchGif(billGates)" class="btn btn-primary" value="billGates">Bill
+                 Gates</button>
+           <button type="button" onclick="searchGif(warrenBuffett)" class="btn btn-primary"
+                 value="warrenBuffett">Warren Buffett</button>
+          <button type="button" onclick="searchGif(markZuckerberg)" class="btn btn-primary"
+              value="markZuckerberg">Mark Zuckerberg</button>
+              br>
+    //     <div class="container" id="btn"></div>
         </div>
-        <br>
-        <div class="container" id="btn">
-            <form id="billionairs-form">
-                <label id="add" for="billionaires-input">Please enter your favorite billionaire</label>
-                <input type="text" class="form-control" id="billionaires-input">
-                <br>
-            </form>
-            <button conclick="submitButtonClicked ()" type="button" id="add-billionaires"
-                class="btn btn-success">Submit</button>
-            <br>
-            <div id="billionaires">
-                <div class="col-md-6">
-                    <div class="ratings">Rating: G</div>
-                    <img src=""
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        
+
+
+        
+    //     <br>
+    //     <div class="container" id="btn">
+    //         <form id="billionairs-form">
+    //             <label id="add" for="billionaires-input">Please enter your favorite billionaire</label>
+    //             <input type="text" class="form-control" id="billionaires-input">
+    //             <br>
+    //         </form>
+    //         <button conclick="submitButtonClicked ()" type="button" id="add-billionaires"
+    //             class="btn btn-success">Submit</button>
+    //         <br>
+    //         <div id="billionaires">
+    //             <div class="col-md-6">
+    //                 <div class="ratings">Rating: G</div>
+    //                 <img src=""
+    //             </div>
+    //         </div>
+    //     </div>
+    // </div>
+    
+    // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="assets/javascript/main.js"></script>
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+    <script src="assets/javascript/main.js"></script>
+    <script type="text/javascript"></script>
+
+    
+
+ 
 </body>
 
 </html>
